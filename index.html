@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind-custom Css -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="font-manrope">
+    <header>
+        <!-- Navbar -->
+        <nav class="container mx-auto lg:px-24 my-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] pr-40 shadow bg-base-500 rounded-box w-5 font-semibold text-lg">
+                            <li class="hover:text-red-500"><a>Home</a></li>
+                            <li class="hover:text-red-500"><a>About</a></li>
+                            <li class="hover:text-red-500"><a>Pages</a></li>
+                            <li class="hover:text-red-500"><a>Blog</a></li>
+                            <li class="hover:text-red-500"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" text-2xl lg:text-4xl font-bold">Hockey<span class="text-red-500">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 hover:text-red-500hover:text-red-500 font-semibold text-lg">
+                        <li class="hover:text-red-500"><a>Home</a></li>
+                        <li class="hover:text-red-500"><a>About</a></li>
+                        <li class="hover:text-red-500"><a>Pages</a></li>
+                        <li class="hover:text-red-500"><a>Blog</a></li>
+                        <li class="hover:text-red-500"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-4">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
+                    <button class="btn bg-red-500 px-5 py-2 text-lg text-white">Get Ticket</button>
+                    <!-- <a class="btn bg-red-500 px-5 py-2 text-lg text-white">Get Ticket</a> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="container mx-auto px-4 lg:px-24 my-8 relative">
+
+            <div class="carousel w-full rounded-md lg:h-[600px]">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full h-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="w-full lg:w-[566px] bg-slate-900 rounded-md shadow-lg lg:absolute lg:bottom-14 lg:right-44 text-white px-2 lg:px-10 py-8 space-y-4">
+                <h1 class=" text-2xl lg:text-3xl font-semibold">Meet all the heroes from the field</h1>
+                <p class="text-sm opacity-70">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat dolor. Purus urna
+                    in sit nullam proin.
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- Professional -->
+        <section class="my-24">
+            <div class="container mx-auto lg:px-24 my-8">
+                <div class="border-dashed border-[1px]">
+                    <h1>Professional Hockeys Club</h1>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
